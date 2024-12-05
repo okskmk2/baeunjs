@@ -1,0 +1,21 @@
+{
+  "name": "baeunjs",
+  "version": "1.0.0",
+  "description": "A lightweight library for DOM manipulation, state management, and SPA routing.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "module": "index.js",
+  "keywords": [
+    "dom",
+    "state",
+    "router",
+    "spa",
+    "javascript"
+  ],
+  "author": "Eunsung Lee",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okskmk2/baeunjs.git"
+  }
+}
