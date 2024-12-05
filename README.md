@@ -185,6 +185,3 @@ hashRouter(routes);
 
 MIT License. See [LICENSE](LICENSE) for more information.
 
----
-
-위 README는 `baeunjs`의 주요 기능과 사용법을 간단히 설명하며, 예제 코드를 포함하여 사용자가 쉽게 시작할 수 있도록 구성되었습니다. 🎉
