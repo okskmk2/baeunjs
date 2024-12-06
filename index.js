@@ -1,1 +1,1 @@
-export { elem, hashRouter, stateManager } from "./src/baeunjs.js";
+export { elem, hashRouter, stateManager, Link } from "./src/baeunjs.js";

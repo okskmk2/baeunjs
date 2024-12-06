@@ -56,7 +56,8 @@ function isChildren(value) {
   return (
     typeof value === "string" ||
     typeof value === "number" ||
-    Array.isArray(value)
+    Array.isArray(value) ||
+    value instanceof HTMLElement
   );
 }
 
@@ -239,4 +240,28 @@ export const stateManager = {
       this.callbacks[key].forEach((callback) => callback(value));
     }
   },
+};
+
+export const Link = (href, props = {}, children) => {
+  // 기존 클래스와 동적 클래스를 병합
+  const dynamicClass =
+    window.location.hash.slice(1) === href ? "router-active" : "";
+  const combinedClass = [props.class, dynamicClass].filter(Boolean).join(" ");
+
+  // class 속성을 명시적으로 props에서 제외하고 처리
+  const { class: _, ...otherProps } = props;
+
+  return elem(
+    "a",
+    {
+      href: `#${href}`, // Hash URL로 설정
+      onclick: function (e) {
+        e.preventDefault(); // 기본 동작 방지
+        window.location.hash = href; // Hash URL 변경
+      },
+      class: combinedClass, // 병합된 클래스 설정
+      ...otherProps, // 기타 속성 병합
+    },
+    children
+  );
 };
