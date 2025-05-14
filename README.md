@@ -143,7 +143,7 @@ Create a hash-based SPA router.
 | Parameter  | Type                                | Description                                       |
 |------------|-------------------------------------|---------------------------------------------------|
 | `routes`   | `Record<string, () => HTMLElement>`| A map of routes to components.                   |
-| `appId`    | `string` (optional, default: `"app"`)| The ID of the container where components render. |
+| `appId`    | `string` (optional, default: `"app"`)`| The ID of the container where components render. |
 
 | **Returns** | `() => void` | A function to manually trigger the router. |
 
