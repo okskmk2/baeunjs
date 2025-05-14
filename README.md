@@ -114,7 +114,7 @@ Create a DOM element.
 |--------------|-------------------------------------|--------------------------------------|
 | `tagName`    | `string`                            | The name of the element tag.         |
 | `options`    | `Record<string, any>` (optional)    | Attributes and event listeners.      |
-| `children`   | `string | number | HTMLElement[]`  | Children elements or text content.  |
+| `children`   | string \| number \| HTMLElement[]  | Children elements or text content.  |
 | **Returns**  | `HTMLElement`                      | The created DOM element.             |
 
 ---
